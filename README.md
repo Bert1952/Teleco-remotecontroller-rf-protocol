@@ -1,6 +1,5 @@
 # Teleco-remotecontroller-rf-protocol
-Frequency 868,25 mhz.  FSK 8 bytes
-
+Frequency 868,25 mhz.  FSK 8 bytes <br/>
 Start puls 2 mhz followed by 500us/1ms pulses. A "0" is represented by a 500 us (pos or neg). A "1" is represented by 1ms.
 
 After each puls the signal is toggled. 1 500us pulse is given after the start puls.
