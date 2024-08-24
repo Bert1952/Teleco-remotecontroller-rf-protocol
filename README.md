@@ -36,8 +36,10 @@ Byte 7 decoding
 
 
 8=slats 1 step down               
-Paring code is devided in 3 parts 1101 1010 1001 1100 0011 0000 0001 0000 0100 0100
+Paring code is devided in 3 parts
+
 ![afbeelding](https://github.com/user-attachments/assets/3c9eb5e5-f904-45ff-99ac-6c3ab7eac949)
+
 Part 1: bits 0 to 13 (14 bits). 
 
 Part 2 bits 18 to 28 (10 bits
