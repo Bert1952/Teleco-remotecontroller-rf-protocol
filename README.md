@@ -12,7 +12,10 @@ Reading the signal from RFM22b in direct mode gives a bitstream as following:
 
 After decoding the bitstream has 8 bytes as following: A1,AC,B2,C0,B3,00,07,87
 
-Bytes 1-5 will be the pairingcode. Byte 6 always 00. Byte 7: the key pressed. Byte 8: checksumsum 0x100- Sum Bytes 1..7
+Bytes 1-5 will be the pairingcode. 
+Byte 6 always 00. 
+Byte 7: the key pressed. 
+Byte 8: checksumsum 0x100- Sum Bytes 1..7
 Byte 7 decoding
 1=slats closed
 2=slats full open
