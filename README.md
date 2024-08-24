@@ -1,4 +1,4 @@
-# Teleco-remotecontroller-rf-protocol for adjustable slats unit TVPLD868C150TT 
+# Teleco-remotecontroller-rf-protocol for adjustable slats unit TVPLD868C150TT integration with android app via a second remote unit
 ![afbeelding](https://github.com/user-attachments/assets/73f1b692-a53e-4310-b1d7-6d52b4c2b608)
 
 Frequency 868,25 mhz.  FSK 8 bytes <br/>
