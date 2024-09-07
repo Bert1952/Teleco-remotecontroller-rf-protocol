@@ -39,3 +39,4 @@ The app sends a command via Mqtt. The esp then sends a random number back to the
 attached: B4a example program. You need to specifiy your MQTT provider creditals. In case you are not on a public channel the hash control can be removed.<br/>
 B4r program for the ESP8266 D1 mini clone. Schematic how to connect the ESP to the RFM22b. (note: RFM22b is a old chip from Hope. You can replace it by a modern type, but some rework on the programming should be done)<br/>
 
+![Screen Shot 09-06-24 at 08 05 PM](https://github.com/user-attachments/assets/8b8a93eb-a344-40c7-8141-b636120413e3)
