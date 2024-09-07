@@ -3,6 +3,7 @@
 
 Frequency 868,25 mhz.  FSK 8 bytes <br/>
 Start puls 2 mhz followed by 500us/1ms pulses. A "0" is represented by a 500 us (pos or neg). A "1" is represented by 1ms. 
+![DatastreamTeleco](https://github.com/user-attachments/assets/c8981cc3-0ee0-4e4a-a506-624d7440a603)
 
 After each puls the signal is toggled. 1 500us pulse is given after the start puls. <br/>
 Reading the signal from RFM22b in direct mode gives a bitstream as following:<br/>
