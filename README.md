@@ -28,3 +28,14 @@ Part 2 bits 18 to 28 (10 bits<br/>
 Part 3 bits 30-39 (10 bits)<br/>
 Bit 14,15,16,17 For group 1 for the controller bit 15 is set<br/>
 Bit 28,29 always 0<br/>
+The numbers are quasi random, but analysis in exel shows that there are links between the button pressed and the bit patterns generated.There are 6 more bits reserved which are apparently used for other groups of the remote control. (6 groups of 7 switches=total of 42 codes)<br/>
+
+Since it is of no further interest to examine the coding, we use the codes as received. The system is not Keelloq coding. A received code word can be used again. The motor control receiver can simply be learned that the ESP generated signals should be accepted as new contoller.<br/>
+
+In B4r, an encoder was created that then makes the RFM22b send a signal to which the sunroof controller responds.<br/>
+
+In b4a, an app was created that controls the esp8266 via MQTT. If the messages run through the public channel, another user could also control the screen. Therefore, a check is built in.<br/>
+The app sends a command via Mqtt. The esp then sends a random number back to the app. The latter makes a calculation based on a given Hash and sends the answer back to the esp. The esp compares the calculation with the internal calculation, and when the result is the same, the signal is sent to the sunscreen. A message is then also sent back to the app so the user gets a notification of accepted.<br/>
+attached: B4a example program. You need to specifiy your MQTT provider creditals. In case you are not on a public channel the hash control can be removed.<br/>
+B4r program for the ESP8266 D1 mini clone. Schematic how to connect the ESP to the RFM22b. (note: RFM22b is a old chip from Hope. You can replace it by a modern type, but some rework on the programming should be done)<br/>
+
